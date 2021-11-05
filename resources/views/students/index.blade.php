@@ -10,8 +10,8 @@
       <ul class="list-group">
         @foreach($students as $student)
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          {{$student->nama}}
-          <a href="" class="btn btn-info"> detail</a>
+          {{ $student->nama }}
+          <a href="/students/{{$student->id}}" class="btn btn-info"> detail</a>
         </li>
         @endforeach
       </ul>
